@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+    <link rel="stylesheet" href="post-details.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+
+    <div class="button">
+    <a id="edit-post-link" href="../update-post/update-post.html">Edit Post</a>
+    <a id="delete-post-link" href="../delete-post/delete-post.html">Delete Post</a>
+    </div>
+    
+    <div id="post-details">
+        <p id="post-title"></p>
+        <p id="post-content"></p>
+        <p id="post-author"></p>
+        <p id="post-date"></p>
+    </div>
+
+    <div id="create-comment">  
+        <a id="comemnt-create-link" href="../create-comment/create-comment.html">Create Comment</a>
+    </div>
+
+    
+
+    <!-- Comments Section -->
+    
+    <div id="comments-container"></div> <!-- Container for comments list -->
+    
+    
+
+
+
+    <script src="postDetails.js"></script>
+    
+    <script>
+        // Access local storage
+        const accessToken = localStorage.getItem('token');
+        const refreshToken = localStorage.getItem('refreshToken');
+        const userId = localStorage.getItem('userId');
+        const username = localStorage.getItem('username');
+        const postId = localStorage.getItem('postId');
+        const postUserId = localStorage.getItem('postUserId'); // Assuming you also store the post owner ID in local storage
+
+
+        console.log("Access Token:", accessToken);
+        console.log("Refresh Token:", refreshToken);
+        console.log("User ID:", userId);
+        console.log("Username:", username);
+        console.log("Post ID:", postId);
+        console.log("Post User ID:", postUserId)
+    </script>
+    <script src="comment_list.js"></script>
+    <script src="checkOwnership.js"></script>
+
+</body>
+</html>

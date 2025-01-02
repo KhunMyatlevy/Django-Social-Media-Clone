@@ -1,0 +1,33 @@
+body {
+    padding: 50px;
+}
+
+#comment-details {
+    padding: 20px;
+    border: 2px solid #ebe6ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: left; /* Centers the text horizontally */
+    margin-top: 20px; /* Adds some space from the top */
+}
+
+#delete-comment-btn {
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Adds some space from the top */
+    width: 20%;
+    color: white;
+    background-color: red;
+}
+
+#Cancel-btn {
+    padding: 20px;
+    border: 2px solid #ebe6ea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Adds some space from the top */
+    width: 20%
+}

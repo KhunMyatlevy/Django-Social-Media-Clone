@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="create_post.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <h1>Create a New Post</h1>
+    <form id="post-form">
+        <input type="text" id="title" placeholder="Enter the post title" required><br>
+    
+        <textarea id="content" placeholder="Write your content here..." required></textarea><br>
+    
+        <button type="submit">Create Post</button>
+    </form>
+    
+
+    <div id="response-message"></div>
+
+    <script>
+        // Access local storage
+        const accessToken = localStorage.getItem('token');
+        const refreshToken = localStorage.getItem('refreshToken');
+        const userId = localStorage.getItem('userId');
+
+        // Display the data in the console
+        console.log('Access Token:', accessToken);
+        console.log('Refresh Token:', refreshToken);
+        console.log('User ID:', userId);
+    </script>
+
+    <script src="create_post.js"></script>  <!-- Link to your JavaScript file -->
+</body>
+</html>

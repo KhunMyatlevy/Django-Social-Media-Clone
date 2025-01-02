@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css"> <!-- Link to your external CSS file -->
+
+</head>
+<body>
+    <p>
+        <a href="../create_post/create_post.html" id="create-post-link">Create a Post</a>
+    </p>
+
+    <div id="posts-container">
+        <!-- Posts will be displayed here -->
+    </div>
+
+
+
+    <script>
+        // Access local storage
+        const accessToken = localStorage.getItem('token');
+        const refreshToken = localStorage.getItem('refreshToken');
+        const userId = localStorage.getItem('userId')
+        const username = localStorage.getItem('username')
+
+        console.log("Access Token:", accessToken);
+        console.log("Refresh Token:", refreshToken);
+        console.log("User ID:", userId);
+        console.log("Username:", username);
+        
+
+    </script>
+    <script src="fetchPosts.js"></script> <!-- Link to the JavaScript file -->
+
+</body>
+</html>
